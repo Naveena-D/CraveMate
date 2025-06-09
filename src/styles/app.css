@@ -1,0 +1,150 @@
+/* src/styles/app.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.app-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.form-box {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-box h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #444;
+    text-align: center;
+}
+
+.form-box input,
+.form-box select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fafafa;
+    transition: border 0.2s;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: #43a047;
+}
+
+.suggestor-box {
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    color: #333;
+}
+
+.suggestor-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.suggestor-box ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.suggestor-box li {
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.4);
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #4CAF50;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .app-container {
+        padding: 1rem;
+    }
+
+    .form-box,
+    .suggestor-box {
+        padding: 1.2rem;
+    }
+
+    .form-box h2 {
+        font-size: 1.5rem;
+    }
+}
+ul li {
+    opacity: 0;
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  ul li:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  ul li:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  ul li:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
